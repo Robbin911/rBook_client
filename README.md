@@ -1,2 +1,2 @@
 ﻿Client for rBook
-by Android
+       by Android
