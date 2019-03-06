@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/debt_bottom_sheet"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="8dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary">
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_debt_detail_sheet_cancel"
+                style="@android:style/Widget.Material.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/baseline_clear_white_24" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_debt_detail_accept"
+                style="@android:style/Widget.Material.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/debt_detail_sheet_desc"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="ACCEPT" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_debt_detail_refuse"
+                style="@android:style/Widget.Material.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btn_debt_detail_accept"
+                android:layout_marginStart="111dp"
+                android:layout_marginTop="1dp"
+                android:layout_toEndOf="@+id/btn_debt_detail_accept"
+                android:fontFamily="sans-serif-condensed"
+                android:text="REFUSE" />
+
+            <TextView
+                android:id="@+id/debt_detail_sheet_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="200.00"
+                android:textColor="@color/Red"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/debt_detail_sheet_arrow_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/debt_detail_sheet_price"
+                android:gravity="center"
+                android:text="◀"
+                android:textColor="@color/Red"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/debt_detail_sheet_arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@+id/debt_detail_sheet_price"
+                android:gravity="center"
+                android:text="▶"
+                android:textColor="@color/Green"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/debt_detail_sheet_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="USER"
+                android:textColor="@color/md_grey_600"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/debt_detail_sheet_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="USER"
+                android:textColor="@color/md_grey_600"
+                android:textSize="22dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="350dp"
+                android:layout_height="3dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="65dp"
+                android:layout_marginEnd="21dp"
+                android:background="@color/half_black"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/debt_detail_total_price"
+                app:layout_constraintEnd_toEndOf="@+id/debt_detail_total_price"
+                app:layout_constraintStart_toStartOf="@+id/debt_detail_total_price"></LinearLayout>
+
+            <TextView
+                android:id="@+id/debt_detail_sheet_desc"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView4"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="102dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="15dp"
+                android:text="long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long" />
+
+            <TextView
+                android:id="@+id/debt_detail_sheet_otext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="69dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Operation:"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/debt_detail_sheet_operation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/debt_detail_sheet_otext"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="-3dp"
+                android:layout_toEndOf="@+id/debt_detail_sheet_otext"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Add"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="88dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Description:"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

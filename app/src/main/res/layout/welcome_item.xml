@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/group_cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="8dp" >
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/group_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/info_item_pressed"
+        tools:layout_editor_absoluteY="25dp">
+
+        <TextView
+            android:id="@+id/welcome_item_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="UserName"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/welcome_item_left_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/welcome_item_me"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="UserName"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/welcome_item_right_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/welcome_item_me"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="21dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="UserName"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/welcome_item_scale"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="6dp"
+            android:layout_toStartOf="@+id/welcome_item_scale"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Circle Scale:"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/welcome_item_scale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="12"
+            android:textSize="13dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignTop="@+id/welcome_item_me"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/welcome_item_me"
+            android:layout_toEndOf="@+id/welcome_item_left_user"
+            android:background="@color/half_black"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/group_detail_name"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="20dp"
+            android:layout_height="1dp"
+            android:layout_alignTop="@+id/welcome_item_me"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:background="@color/half_black"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/group_detail_name"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="20dp"
+            android:layout_height="1dp"
+            android:layout_alignTop="@+id/welcome_item_me"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/half_black"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/group_detail_name"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignTop="@+id/welcome_item_me"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="6dp"
+            android:layout_toStartOf="@+id/welcome_item_right_user"
+            android:layout_toEndOf="@+id/welcome_item_me"
+            android:background="@color/half_black"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/group_detail_name"></LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

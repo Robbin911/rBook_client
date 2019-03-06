@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/debt_detail_add_bottom_sheet"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="8dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary">
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_debt_detail_multi_cancel"
+                style="@android:style/Widget.Material.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/baseline_clear_white_24" />
+            <TextView
+                android:id="@+id/sheet_title_multi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Delete Debt" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_debt_detail_multi_send"
+                style="@android:style/Widget.Material.Button.Borderless"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_combine_desc"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="9dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="DELETE" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/debt_detail_multi_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="1dp" />
+
+            <EditText
+                android:id="@+id/edit_combine_desc"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/debt_detail_multi_recycler"
+                android:layout_centerHorizontal="true"
+                android:maxLength="140"
+                android:textSize="15dp"
+                android:textColor="@color/half_black"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="Input Description for Combine" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/debt_detail_cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="8dp" >
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/debt_detail_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/info_item_pressed"
+        tools:layout_editor_absoluteY="25dp">
+
+        <TextView
+            android:id="@+id/debt_detail_price"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="21dp"
+            android:layout_toEndOf="@+id/debt_detail_arrow"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="200.00"
+            android:textColor="@color/Red"
+            android:textSize="25dp"
+            android:typeface="sans"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="21dp" />
+
+        <LinearLayout
+            android:id="@+id/debt_detail_color_layout"
+            android:layout_width="309dp"
+            android:layout_height="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:background="@color/Red"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="38dp"></LinearLayout>
+
+        <TextView
+            android:id="@+id/debt_detail_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="◀"
+            android:textColor="@color/Red"
+            android:textSize="22dp"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <TextView
+            android:id="@+id/debt_detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="2019-01-01"
+            android:textSize="17dp"
+            android:textStyle="italic"
+            tools:layout_editor_absoluteX="299dp"
+            tools:layout_editor_absoluteY="60dp" />
+
+        <TextView
+            android:id="@+id/debt_detail_desc_text"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/debt_detail_price"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="0dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:lines="2"
+            android:text=" "
+            android:textColor="@color/half_black"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/debt_detail_new_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="9dp"
+            app:srcCompat="@drawable/baseline_announcement_24" />
+
+        <TextView
+            android:id="@+id/debt_detail_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/debt_detail_new_image"
+            android:layout_below="@+id/debt_detail_new_image"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Combine"
+            android:textSize="15dp" />
+        <CheckBox
+            android:id="@+id/debt_detail_select_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

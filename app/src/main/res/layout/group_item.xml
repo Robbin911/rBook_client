@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/group_cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="8dp" >
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/group_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/info_item_pressed"
+        tools:layout_editor_absoluteY="25dp">
+
+        <TextView
+            android:id="@+id/group_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/group_date_text"
+            android:layout_marginStart="3dp"
+            android:layout_toEndOf="@+id/group_date_text"
+            android:fontFamily="sans-serif-condensed"
+            android:text="2019-01-01"
+            android:textSize="13dp"
+            tools:layout_editor_absoluteX="299dp"
+            tools:layout_editor_absoluteY="60dp" />
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Group Name"
+            android:textColor="@color/md_grey_700"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/group_name"
+            android:layout_alignStart="@+id/group_name"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="7dp"
+            card_view:srcCompat="@drawable/outline_account_circle_24" />
+
+        <TextView
+            android:id="@+id/group_member_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/group_name"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:fontFamily="sans-serif-condensed"
+            android:text="10"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/group_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="13dp"
+            android:layout_toEndOf="@+id/group_member_num"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Last Update Time:"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/group_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="289dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginBottom="34dp"
+            android:text="Confirm"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle=""
+            android:textSize="17dp"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

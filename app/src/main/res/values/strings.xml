@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">rBOOK</string>
+
+    <!-- Server RESTful API path -->
+    <string name="server_address">http://47.101.222.161:8080</string>
+    <string name="login_path">/login</string>
+    <string name="signup_path">/signup</string>
+    <string name="debt_total_path">/browsePair</string>
+    <string name="add_pair_path">/One2OneConstruct</string>
+    <string name="debt_detail_path">/browsePairDebt</string>
+    <string name="debt_detail_add_path">/addPairDebt</string>
+    <string name="debt_detail_delete_path">/deletePairDebt</string>
+    <string name="debt_detail_combine_path">/combinePairDebt</string>
+    <string name="debt_detail_accept_path">/AcceptDebt</string>
+    <string name="debt_detail_refuse_path">/RefuseDebt</string>
+    <string name="group_list_path">/browseGroup</string>
+    <string name="group_new_path">/createGroup</string>
+    <string name="group_join_path">/addGroup</string>
+    <string name="group_debt_path">/browseGroupDebt</string>
+    <string name="group_debt_member_path">/browseDebtMember</string>
+    <string name="group_member_path">/browseGroupMember</string>
+    <string name="group_check_list_path">/browseRes</string>
+    <string name="group_add_debt_path">/proposeGroupDebt</string>
+    <string name="group_confirm_path">/confirmGroup</string>
+    <string name="group_delete_path">/deleteGroupDebt</string>
+    <string name="group_check_path">/acceptRes</string>
+    <string name="group_add_sheet_member_path">/browseGroupMemberExceptSelf</string>
+    <string name="group_update_info_path">/browseCertainGroup</string>
+    <string name="user_loop_check_path">/browseUserInfo</string>
+    <!-- Coin Info RESTful API path-->
+    <string name="info_incomplete">Incomplete Information!</string>
+    <string name="login_fail">login failed</string>
+    <string name="login_success">Login success,Enter Main Page</string>
+    <string name="no_empty">Cannot be empty!</string>
+    <string name="password_not_same">password is inconsistent!</string>
+    <string name="registration_success">Registration success</string>
+    <string name="registration_fail">Registration fail</string>
+</resources>
